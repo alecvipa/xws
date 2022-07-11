@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Horizontal Halves - Startup</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/startup-materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/28f081bff3.js" crossorigin="anonymous"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-solid-transition">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img src="/assets/images/logoBlancoTransparent.png" alt="logoNegro"
+                    class="logoNegroBg"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Inicio</a></li>
+                <li class="active"><a class="dropdown-trigger" href="#!" data-target="pages">Servicios<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="/proyectos">Proyectos</a></li>
+                <li><a href="/contato">Contacto</a></li>
+
+            </ul>
+
+            <ul id="pages" class="dropdown-content">
+                <li><a href="/webdesign">Diseño Web</a></li>
+                <li><a href="/socialmedia">Redes sociales</a></li>
+                <li><a href="/digitalcontent">Contenido digital</a></li>
+                <li><a href="/digitalcampaigns">Campañas digitales</a></li>
+
+            </ul>
+
+            <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse right"><i
+                    class="material-icons white-text">menu</i></a>
+        </div>
+    </nav>
+    <ul id="slide-out" class="sidenav">
+        <li><a href="/">Inicio</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-teal active">Servicios<i
+                            class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/webdesign">Diseño Web</a></li>
+                            <li><a href="/socialmedia">Redes sociales</a></li>
+                            <li><a href="/digitalcontent">Contenido digital</a></li>
+                            <li><a href="/digitalcampaigns">Campañas digitales</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/proyectos">Proyectos</a></li>
+        <li><a href="/contato">Contacto</a></li>
+    </ul>
+    <div class="bodyPrincipal">
+        {{{body}}}
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m3">
+                    <img class="materialize-logo" src="images/materialize-teal.png" alt="">
+                    <p>Xyncs: Web Studio.</p>
+                </div>
+                <div class="col s6 m3">
+                    <h5>Nosotros</h5>
+                    <ul>
+                        <li><a href="#!">Proyectos</a></li>
+                        <li><a href="#!">Contizaciones</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="col s6 m3">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="#!">Instagram</a></li>
+                        <li><a href="#!">Facebook</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    {{!-- <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#!">Community</a></li>
+                        <li><a href="#!">Subscribe</a></li>
+                        <li><a href="#!">Email</a></li>
+                    </ul> --}}
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/assets/js/materialize.min.js"></script>
+
+    <!-- External libraries -->
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/TweenMax.min.js"></script>
+    <script src="/assets/js/ScrollMagic.min.js"></script>
+    <script src="/assets/js/animation.gsap.min.js"></script>
+
+    <!-- Initialization script -->
+    <script src="/assets/js/startup.js"></script>
+    <script src="/assets/js/init.js"></script>
+
+
+
+</body>
+
+</html>

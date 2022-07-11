@@ -1,0 +1,59 @@
+.navbar-solid-transition{
+    padding-bottom: 6%;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.navItems {
+    color: black !important;
+    
+}
+.textSomos{
+    font-size: 25px;
+    line-height: 1.5;
+}
+.logoNegroBg{
+    width: 8% !important;
+    padding: 1%;
+}
+.transitionTitle{
+    margin-top: 10% !important;
+}
+.material-icons{
+    color: white !important;
+}
+.somosXyncs{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: white;
+}
+.celXyncs{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.textWthite{
+    color:  #fabab2 !important;
+}
+.textRealWhite{
+    color: white !important;
+}
+.textBlack{
+    color: black !important;
+}
+
+@media only screen and (min-width : 992px) {
+    .nOlvidar{
+        margin-bottom: 100%;
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .logoNegroBg{
+        width: 15% !important;
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width : 600px) {}
