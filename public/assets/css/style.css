@@ -42,6 +42,28 @@
 .textBlack{
     color: black !important;
 }
+.weBanner{
+    height: 50rem;
+    background-image: url('/assets/images/bannerWd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.soBanner{
+    height: 50rem;
+    background-image: url('/assets/images/bannerSm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.campDiv{
+    height: 50rem;
+    background-image: url('/assets/images/bannerC.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 @media only screen and (min-width : 992px) {
     .nOlvidar{
@@ -53,6 +75,9 @@
     .logoNegroBg{
         width: 15% !important;
         padding: 0%;
+    }
+    .weBanner, .soBanner, .campDiv{
+        height: 23rem;
     }
 }
 
