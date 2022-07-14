@@ -3,6 +3,7 @@
     padding-left: 3%;
     padding-right: 5%;
 }
+.pointer {cursor: pointer;}
 
 .navItems {
     color: black !important;
