@@ -1,0 +1,74 @@
+<div class="contactoDiv"> <br>
+    <div class="divContacto">
+
+    </div><br>
+    <div class="container centered titleSiguenos">
+        <div class="row">
+
+            <h3>Contáctanos</h3>
+            <p style="font-style: italic; font-size: 1.5rem">También puedes enviar correo directamente a:
+                alecvipa@gmail.com
+            </p>
+
+        </div>
+        <div class="row">
+            <form class="col s12" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input name="name" placeholder="Nombre" id="first_name" type="text" class="validate formInput"
+                            required="" aria-required="true">
+                        <label for="first_name">Nombre completo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input name="email" id="email" type="text" class="validate formInput" required=""
+                            aria-required="true">
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="message" id="input_text" type="text" data-length="10" required=""
+                            aria-required="true" class="formInput">
+                        <label for="input_text">Mensaje</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>
+                        <input type="checkbox" required="" aria-required="true" />
+                        <span>Acepto <a href="/privacidad" >aviso de privacidad</a></span>
+                    </label>
+                </div>
+                <button class="btn waves-effect waves-light #212121 grey darken-4">Enviar
+                    <i class="material-icons right" style="color: white !important;">send</i>
+                </button>
+            </form>
+        </div>
+    </div> <br>
+    <div class="opcionComprar">
+        <div class="container">
+            <div class="row centered titleSiguenos">
+                <h4>Síguenos en redes.</h4>
+            </div>
+            <div class="row">
+                <div class="col l4 m4 s12">
+                    <a href="https://www.instagram.com/xyncstudio/?hl=es" target="_blank">
+                    <img class="responsive-img" src="/assets/images/push.jpg">
+                    </a>
+                    
+                </div>
+                <div class="col l4 m4 s12">
+                    <a href="https://www.instagram.com/xyncstudio/?hl=es" target="_blank">
+                    <img class="responsive-img" src="/assets/images/tarjetaPresentacion.jpg">
+                    </a>
+                    
+                </div>
+                <div class="col l4 m4 s12">
+                    <a href="https://www.instagram.com/xyncstudio/?hl=es" target="_blank">
+                    <img class="responsive-img" src="/assets/images/celXyncs.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div> <br>
+</div>

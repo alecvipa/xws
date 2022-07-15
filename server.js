@@ -40,7 +40,6 @@ app.get('/:params?', function (req, res) {
     res.render(params);
 })
 
-
 // Nodemailer route
 
 app.post("/ajax/email", function (request, response) {
@@ -63,7 +62,7 @@ app.post("/ajax/email", function (request, response) {
     var mail = {
         from: '"Team: Xyncs Web Studio',
         to: 'hebrit_626@hotmail.com',
-        subject: '¡Alguien ha llenado el formulario de contacto, Alejandro Vilpa!',
+        subject: '¡Alguien ha llenado el formulario de contacto en Xyncs Web Studio!',
         html: htmlBody
     };
     transporter.sendMail(mail, function (err, info) {
@@ -75,7 +74,7 @@ app.post("/ajax/email", function (request, response) {
     });
 });
 
-app.post("/club/email", function (request, response) {
+app.post("/inicio/email", function (request, response) {
     console.log(email);
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -91,7 +90,7 @@ app.post("/club/email", function (request, response) {
     });
 
     var textBody = `FROM: ${request.body.name}; EMAIL: ${request.body.email}; MESSAGE: ${request.body.message}`;
-    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>País: ${request.body.country} </p>`;
+    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Message: ${request.body.message} </p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
         to: 'hebrit_626@hotmail.com',

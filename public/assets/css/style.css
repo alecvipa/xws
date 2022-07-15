@@ -65,10 +65,29 @@
     background-size: cover;
 
 }
+.divContacto{
+    height: 30rem;
+    background-image: url('/assets/images/bannerContacto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.bannerPrivacidad2{
+    height: 50rem;
+    background-image: url('/assets/images/bannerPrivacidad.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 @media only screen and (min-width : 992px) {
     .nOlvidar{
         margin-bottom: 100%;
+    }
+    .divContacto{
+        background-position: 0% 17%;
     }
 }
 
@@ -80,6 +99,7 @@
     .weBanner, .soBanner, .campDiv{
         height: 23rem;
     }
+    
 }
 
 @media only screen and (max-width : 600px) {}

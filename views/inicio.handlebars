@@ -274,7 +274,8 @@
                         </div>
                         <div class="feature fade-right-in-out">
                             <h3>Micrositios</h3>
-                            <p>Si aun estás en etapas tempranas de tu negocio. Podemos generarte algo más pequeño, que cumpla con las expectativas mínimas para que puedas crecer digitalmente. </p>
+                            <p>Si aun estás en etapas tempranas de tu negocio. Podemos generarte algo más pequeño, que
+                                cumpla con las expectativas mínimas para que puedas crecer digitalmente. </p>
                         </div>
                     </div>
                 </div>
@@ -299,24 +300,36 @@
     <!-- Contact Us -->
     <div class="section light valign-wrapper" style="background-color: black !important;">
         <div class="container">
-            <form>
+            <form action="/inicio/email" method="POST" onsubmit="return submitInicioForm(this);">
                 <div class="row">
                     <div class="col s12">
                         <h2 class="section-title textRealWhite">Contáctanos</h2>
                     </div>
-                    <div class="input-field col s6">
-                        <input id="first_name" type="text" >
-                        <label for="first_name" >Nombre</label>
+                    <div class="input-field col s6 ">
+                        <input id="first_name" type="text" name="nameInicio" required="" class="formInput">
+                        <label for="first_name">Nombre Completo</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text">
-                        <label for="last_name">Apellidos</label>
+                        <input name="emailInicio" id="emailInicio" type="text" class="validate formInput" required=""
+                            aria-required="true">
+                        <label for="email">Correo electrónico</label>
                     </div>
-                    <div class="input-field col s12">
-                        <textarea id="message" class="materialize-textarea"></textarea>
-                        <label for="message">Mensaje</label>
-                        <a class="waves-effect waves-light btn-large">Enviar</a>
-                    </div>
+                    
+                        <div class="input-field col s12">
+                            <input name="messageInicio" id="input_text" type="text" data-length="10" required=""
+                                aria-required="true" class="formInput">
+                            <label for="input_text">Mensaje</label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" required="" aria-required="true" />
+                                <span>Acepto <a href="/privacidad">aviso de privacidad</a></span>
+                            </label>
+                        </div>
+                        <button class="btn waves-effect waves-light #212121 grey darken-4">Enviar
+                            <i class="material-icons right" style="color: white !important;">send</i>
+                        </button>
+                    
                 </div>
             </form>
         </div>

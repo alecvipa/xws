@@ -15,6 +15,52 @@
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        function submitEmailForm(form) {
+
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4) {
+                    if (obj.status == 200) {
+                        var res = JSON.parse(obj.responseText);
+                        alert(res.message);
+                    }
+                    else {
+                        console.log("XMLHttp status " + obj.status + ": " + obj.statusText);
+                    }
+                }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+            alert("¡Mensaje enviado con éxito!");
+            $(".formInput").val(" ");
+            return false;
+        }
+    </script>
+    <script>
+        function submitInicioForm(form) {
+
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4) {
+                    if (obj.status == 200) {
+                        var res = JSON.parse(obj.responseText);
+                        alert(res.message);
+                    }
+                    else {
+                        console.log("XMLHttp status " + obj.status + ": " + obj.statusText);
+                    }
+                }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.nameInicio.value, email: form.emailInicio.value, message: form.messageInicio.value }));
+            alert("¡Bienvenido a la comunidad. Tu registro ha sido hecho con éxito!");
+            $(".formInput").val(" ");
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -28,7 +74,8 @@
                 <li class="active"><a class="dropdown-trigger" href="#!" data-target="pages">Servicios<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="/proyectos">Proyectos</a></li>
-                <li><a href="/contato">Contacto</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/privacidad">Aviso de privacidad</a></li>
 
             </ul>
 
@@ -61,7 +108,8 @@
             </ul>
         </li>
         <li><a href="/proyectos">Proyectos</a></li>
-        <li><a href="/contato">Contacto</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="/privacidad">Aviso de privacidad</a></li>
     </ul>
     <div class="bodyPrincipal">
         {{{body}}}
