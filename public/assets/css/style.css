@@ -50,6 +50,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.weBannerLanding{
+    height: 50rem;
+    background-image: url('/assets/images/landingWeb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .soBanner{
     height: 50rem;
     background-image: url('/assets/images/bannerSm.jpg');
@@ -96,9 +104,10 @@
         width: 15% !important;
         padding: 0%;
     }
-    .weBanner, .soBanner, .campDiv{
+    .weBanner, .soBanner, .campDiv, .weBannerLanding{
         height: 23rem;
     }
+    
     
 }
 
