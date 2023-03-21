@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/css/startup-materialize.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/28f081bff3.js" crossorigin="anonymous"></script>
-   
+
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -61,11 +61,24 @@
             return false;
         }
     </script>
+    <script>
+        if (window.location.href == "https://www.xyncs.com/xyncsweb") {
+            //user scrolled to the top of the page
+            $('.navBarsS').hide();
+
+
+        }
+        else {
+
+             $('.navBarsS').show();
+        }
+
+    </script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-solid-transition">
+    <nav class="navbar navbar-solid-transition navBarsS">
         <div class="nav-wrapper">
             <a href="/" class="brand-logo"><img src="/assets/images/logoBlancoTransparent.png" alt="logoNegro"
                     class="logoNegroBg"></a>
