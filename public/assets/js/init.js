@@ -1,21 +1,21 @@
-(function($){
-  $(function(){
+(function ($) {
+  $(function () {
 
     M.AutoInit();
 
     // Plugin initialization
-    $('.dropdown-trigger').dropdown({coverTrigger: false, constrainWidth: false});
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.dropdown-trigger').dropdown({ coverTrigger: false, constrainWidth: false });
+    $('.carousel.carousel-slider').carousel({ fullWidth: true });
     $('.carousel').carousel();
     $('.slider').slider();
     $('.parallax').parallax();
     $('.modal').modal();
     $('.scrollspy').scrollSpy();
-    $('.button-collapse').sidenav({'edge': 'left'});
-    $('.datepicker').datepicker({selectYears: 20});
+    $('.button-collapse').sidenav({ 'edge': 'left' });
+    $('.datepicker').datepicker({ selectYears: 20 });
     $('select').not('.disabled').formSelect();
     $('input.autocomplete').autocomplete({
-      data: {"Apple": null, "Microsoft": null, "Google": 'http://placehold.it/250x250'},
+      data: { "Apple": null, "Microsoft": null, "Google": 'http://placehold.it/250x250' },
     });
 
     // Chips
@@ -47,3 +47,14 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+if (window.location.href == "https://www.xyncs.com/xyncsweb") {
+  //user scrolled to the top of the page
+  $('.navBarsS').hide();
+
+
+}
+else {
+
+  $('.navBarsS').show();
+}
