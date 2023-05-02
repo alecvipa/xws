@@ -54,6 +54,7 @@ if (window.location.href == "https://www.xyncs.com/xyncsweb") {
 
 
 }
+
 else {
 
   $('.navBarsS').show();
