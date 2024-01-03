@@ -104,8 +104,11 @@
         width: 15% !important;
         padding: 0%;
     }
-    .weBanner, .soBanner, .campDiv, .weBannerLanding{
+    .weBanner, .soBanner, .campDiv {
         height: 23rem;
+    }
+    .weBannerLanding{
+        background-image: url('/assets/images/landingResponsive.jpg');
     }
     
     
