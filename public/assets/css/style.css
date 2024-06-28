@@ -1,5 +1,5 @@
 .navbar-solid-transition{
-    padding-bottom: 6%;
+    padding-bottom: 8%;
     padding-left: 3%;
     padding-right: 5%;
 }
@@ -9,13 +9,18 @@
     color: black !important;
     
 }
+.bulletsGross{
+    color: rgb(220, 117, 0);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
 .textSomos{
     font-size: 25px;
     line-height: 1.5;
 }
 .logoNegroBg{
-    width: 8% !important;
-    padding: 1%;
+    width: 15% !important;
+    padding: 0%;
 }
 .transitionTitle{
     margin-top: 10% !important;
@@ -34,6 +39,12 @@
   margin-right: auto;
   width: 60%;
 }
+.teambuildingFontSize{
+    font-size: 25px ;
+}
+.justifyText{
+    text-align: justify !important;
+}
 .textWthite{
     color:  #fabab2 !important;
 }
@@ -50,6 +61,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .weBannerLanding{
     height: 50rem;
     background-image: url('/assets/images/landingWeb.jpg');
@@ -57,6 +69,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+.clientesKa{
+    height: 50rem;
+    background-image: url('/assets/images/clientesKavana.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .soBanner{
     height: 50rem;
@@ -97,11 +117,14 @@
     .divContacto{
         background-position: 0% 17%;
     }
+    .superNav{
+        margin: 29px !important;
+    }
 }
 
 @media only screen and (max-width : 991px) {
     .logoNegroBg{
-        width: 15% !important;
+        width: 42% !important;
         padding: 0%;
     }
     .weBanner, .soBanner, .campDiv {
@@ -109,6 +132,24 @@
     }
     .weBannerLanding{
         background-image: url('/assets/images/landingResponsive.jpg');
+    }
+    .transitionTitle{
+       font-size: 3rem !important;
+    }
+    .marginCont{
+        margin: 7% !important;
+    }
+    .clientesKa{
+        height: 13rem;
+        display: block;
+        margin: auto;
+        
+    }
+    .navbar{
+        height: 82px !important;
+    }
+    .avisoPrivacidadTitle{
+        margin-top: 36%;
     }
     
     
