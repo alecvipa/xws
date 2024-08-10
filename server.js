@@ -39,8 +39,9 @@ app.get('/', function (req, res) {
 //     var params = req.params.params;
 //     res.render(params);
 // })
-app.get('/xyncsweb', function (req, res) {
-    res.render('xyncsweb');
+
+app.get('/teamBuildings', function (req, res) {
+    res.render('teamBuildings');
 
 });
 app.get('/gracias', function (req, res) {
